@@ -6,34 +6,22 @@ body {
   color: #555;
 }
 
-/* Cards femeninas */
-.card {
-  background-color: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s, box-shadow 0.3s;
-  padding: 1.2rem;
+/* Contenedor general */
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 1rem;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+/* Header centrado */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Títulos de card */
-.card-title {
-  color: #B266FF; /* morado pastel */
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-
-/* Texto de card */
-.card-text {
-  color: #666666;
-  font-size: 0.95rem;
-}
-
-/* Header */
 header h1 {
   color: #B266FF;
   font-weight: 700;
@@ -52,7 +40,60 @@ hr {
   margin: 0.5rem auto 2rem auto;
 }
 
+/* Contenedor de las cards (centrado y responsive) */
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cards femeninas */
+.card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 1.2rem;
+  width: 100%;
+  max-width: 18rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Títulos de card */
+.card-title {
+  color: #B266FF;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* Texto de card */
+.card-text {
+  color: #666666;
+  font-size: 0.95rem;
+}
+
+/* Footer de card */
+.card-footer {
+  font-size: 0.8rem;
+  color: #999999;
+  text-align: right;
+}
+
 /* Spinner */
 .spinner-border {
   color: #B266FF;
+}
+
+/* Responsive para móviles */
+@media (max-width: 576px) {
+  .card {
+    max-width: 90%;
+  }
 }

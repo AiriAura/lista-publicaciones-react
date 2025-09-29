@@ -31,15 +31,15 @@ const PostsList = () => {
     );
 
   return (
-    <div className="d-flex flex-wrap justify-content-center gap-4">
+    <div className="posts-container">
       {posts.map((post) => (
-        <div className="card" style={{ width: "18rem" }} key={post.id}>
+        <div className="card" key={post.id}>
           <div className="card-body">
             <h5 className="card-title">{post.title}</h5>
             <p className="card-text">{post.body}</p>
           </div>
-          <div className="card-footer bg-transparent border-0 text-end">
-            <small className="text-muted">ID: {post.id}</small>
+          <div className="card-footer">
+            <small>ID: {post.id}</small>
           </div>
         </div>
       ))}
