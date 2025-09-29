@@ -1,0 +1,58 @@
+/* Tipografía redondeada y fondo suave */
+body {
+  margin: 0;
+  font-family: 'Quicksand', 'Poppins', sans-serif;
+  background-color: #FFF0F5;
+  color: #555;
+}
+
+/* Cards femeninas */
+.card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 1.2rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Títulos de card */
+.card-title {
+  color: #B266FF; /* morado pastel */
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* Texto de card */
+.card-text {
+  color: #666666;
+  font-size: 0.95rem;
+}
+
+/* Header */
+header h1 {
+  color: #B266FF;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+header p {
+  color: #D399FF;
+  font-size: 1.1rem;
+}
+
+hr {
+  border-color: #B266FF;
+  border-width: 2px;
+  width: 60px;
+  margin: 0.5rem auto 2rem auto;
+}
+
+/* Spinner */
+.spinner-border {
+  color: #B266FF;
+}
