@@ -63,24 +63,31 @@ lista-publicaciones-react/
 1. Clonar el repositorio:
 
 ```bash
-git clone <URL_DE_TU_REPO>
+git clone <https://github.com/AiriAura/lista-publicaciones-react>
+```
 
 2. Entrar en la carpeta del proyecto:
 
+```bash
 cd lista-publicaciones-react
+```
 
 3. Instalar dependencias:
 
+```bash
 npm install
+```
 
 4. Ejecutar el proyecto:
 
+```bash
 npm run dev
-
+```
 5. Abrir el proyecto en tu navegador en:
 
+```bash
 http://localhost:5173
-
+```
 
 💻 Uso
 
